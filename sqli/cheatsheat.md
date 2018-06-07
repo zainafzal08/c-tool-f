@@ -35,6 +35,8 @@ if you have something like
 
 `select id from <injection>`
 
-utilise sub queries, this will grab the password field instead of the id field.
+utilise sub queries, this will grab the password field instead of the id field and give it a alias so the query compiles
 
 `select id from (select password as id from users)`
+
+##
