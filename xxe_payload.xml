@@ -1,1 +1,1 @@
-<!ENTITY % lol "<!ENTITY file SYSTEM 'file:///etc/passwd'>"> %lol;
+<!ENTITY file SYSTEM 'file:///etc/passwd'>
