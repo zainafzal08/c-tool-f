@@ -39,4 +39,20 @@ utilise sub queries, this will grab the password field instead of the id field a
 
 `select id from (select password as id from users)`
 
-##
+## Blind
+
+With most queries the best thing is to write a query that will return 1 row ish and then union / and it with your target payload query.
+
+If the query fails for whatever reason you will get 0 results whereas if it compiles without crashing you get 1 row.
+
+In this way you can test payloads.
+
+If you can't actually get a response then you have to do
+
+`1 UNION SELECT IF(<test>,BENCHMARK(5000000,ENCODE('MSG','by 5 seconds')),null))  FROM users WHERE user_id = 1`
+
+here we use `BENCHMARK` which will encode "MSG" 5000000 times to cause a noticable delay.
+
+Now we can test letter by letter for something like `SUBSTRING(user_password,1,1) = CHAR(50)` to get the characters of the password one by one
+
+(should be scripted)

