@@ -43,3 +43,10 @@ you need to write a script to slowly guess the string each time.
 
 14. polyglots
 15. angular: http://blog.portswigger.net/2016/01/xss-without-html-client-side-template.html
+
+
+## tips
+
+1. Make sure you arn't getting hit by client side sanitation which you can easily fuck over
+2. grabbing information other then cookies is useful such as user agents or the entire html page.
+3.

@@ -56,3 +56,7 @@ here we use `BENCHMARK` which will encode "MSG" 5000000 times to cause a noticab
 Now we can test letter by letter for something like `SUBSTRING(user_password,1,1) = CHAR(50)` to get the characters of the password one by one
 
 (should be scripted)
+
+## Nothing is working!
+
+Have you tried injecting into other fields then a text box? a cookie perhaps
