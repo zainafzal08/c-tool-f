@@ -1,1 +1,1 @@
-<!ENTITY file SYSTEM "/flag">
+<!ENTITY file SYSTEM "file:///flag">
