@@ -1,1 +1,1 @@
-<!ENTITY file SYSTEM "expect://ls">
+<!ENTITY file SYSTEM "file:///etc/passwd">
