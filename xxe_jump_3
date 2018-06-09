@@ -1,1 +1,1 @@
-<!ENTITY file SYSTEM "file:///proc/self/environ">
+<!ENTITY file SYSTEM "expect://ls">
